@@ -51,3 +51,6 @@ Route::get('/cmd/{command}', function($command) {
     Artisan::call($command);
     dd(Artisan::output());
 });
+
+//Before of test this proyect create the symbolic link of storage folder to public
+// php artisan storage:link
